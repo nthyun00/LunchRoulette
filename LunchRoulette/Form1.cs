@@ -142,8 +142,9 @@ namespace LunchRoulette
 
         private DialogResult SaveCheck()
         {
-            if (isChanged == false)
+            if (isChanged == false || (this.path.Length == 0 && listBox1.Items.Count == 0)) 
                 throw new Exception();
+
             DialogResult dr = MessageBox.Show(("변경 내용을 " + (this.path.Length == 0 ? "제목 없음" : this.path) + "에 저장하시겠습니까?"), "LunchRoulette", MessageBoxButtons.YesNoCancel);
            
             if(dr==DialogResult.Yes)
@@ -164,6 +165,8 @@ namespace LunchRoulette
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            if (listBox1.Items.Count == 0)
+                return;
             button1.Visible = false;
             for (int i = 1; i < 100; i++) 
             {
@@ -242,7 +245,10 @@ namespace LunchRoulette
         {
             try
             {
-                this.DeleteItems(listBox1.Items[listBox1.SelectedIndex]);
+                int loop = listBox1.Items.Count;
+                for (int i = 0; i < loop; i++) 
+                    this.DeleteItems(listBox1.Items[listBox1.SelectedIndex]);
+
             }
             catch(Exception)
             {
@@ -286,6 +292,11 @@ namespace LunchRoulette
             button2.Location = new Point(listBox1.Width + 50, button2.Location.Y);
             button3.Location = new Point(listBox1.Width + 50, button3.Location.Y);
             textBox1.Location = new Point(listBox1.Width + 25, textBox1.Location.Y);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label2.Text = "Items.Count : " + listBox1.Items.Count.ToString();
         }
     }
 }
