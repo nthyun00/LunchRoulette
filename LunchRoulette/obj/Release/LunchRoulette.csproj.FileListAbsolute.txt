@@ -1,0 +1,10 @@
+D:\TempShare\LunchRoulette\LunchRoulette\bin\Release\LunchRoulette.exe.config
+D:\TempShare\LunchRoulette\LunchRoulette\bin\Release\LunchRoulette.exe
+D:\TempShare\LunchRoulette\LunchRoulette\bin\Release\LunchRoulette.pdb
+D:\TempShare\LunchRoulette\LunchRoulette\obj\Release\LunchRoulette.Form1.resources
+D:\TempShare\LunchRoulette\LunchRoulette\obj\Release\LunchRoulette.Properties.Resources.resources
+D:\TempShare\LunchRoulette\LunchRoulette\obj\Release\LunchRoulette.csproj.GenerateResource.Cache
+D:\TempShare\LunchRoulette\LunchRoulette\obj\Release\LunchRoulette.csproj.CoreCompileInputs.cache
+D:\TempShare\LunchRoulette\LunchRoulette\obj\Release\LunchRoulette.exe
+D:\TempShare\LunchRoulette\LunchRoulette\obj\Release\LunchRoulette.pdb
+D:\TempShare\LunchRoulette\LunchRoulette\obj\Release\LunchRoulette.csprojResolveAssemblyReference.cache
